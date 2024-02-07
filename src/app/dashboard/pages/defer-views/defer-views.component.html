@@ -1,0 +1,36 @@
+<section>
+  <div class="grid grid-col-1">
+
+    @defer () {
+      <app-heavy-loaders-slow cssClass="bg-lime-400" title="Bloque 1"/>
+    }
+    @placeholder {
+     <h1 class="h-[120px] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
+      Loading data, please wait
+    </h1>
+    }
+
+    @defer (on hover) {
+      <app-heavy-loaders-slow cssClass="bg-purple-400" title="Bloque 2"/>
+    }
+    @placeholder {
+     <h1 class="h-[120px] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
+      Loading data, please wait
+    </h1>
+    }
+
+
+
+    @defer (on viewport) {
+      <app-heavy-loaders-slow cssClass="bg-teal-400" title="Bloque 3"/>
+    }
+    @placeholder {
+     <h1 class="h-[120px] w-full bg-gradient-to-r from-gray-200 to-gray-400 animate-pulse">
+      Loading data, please wait
+    </h1>
+    }
+
+
+
+  </div>
+</section>
