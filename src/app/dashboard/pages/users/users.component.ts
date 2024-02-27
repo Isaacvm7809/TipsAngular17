@@ -11,14 +11,10 @@ import { TitleComponent } from "../shared/title/title.component";
     imports: [RouterLink, TitleComponent]
 })
 export default class UsersComponent {
+
   public userService = inject( UsersService ) ;
 
-
   constructor(){
-    console.log('loading data');
-
-
-
   }
 
 }
